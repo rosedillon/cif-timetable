@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Schedule feeds are multi-gigabyte; fetch your own.
+CIF_*.json
+*.json.gz
+
+.DS_Store
