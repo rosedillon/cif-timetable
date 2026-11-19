@@ -1,5 +1,10 @@
 # cif-timetable
 
+[![PyPI](https://img.shields.io/pypi/v/cif-timetable)](https://pypi.org/project/cif-timetable/)
+[![Python](https://img.shields.io/pypi/pyversions/cif-timetable)](https://pypi.org/project/cif-timetable/)
+[![CI](https://github.com/rosedillon/cif-timetable/actions/workflows/ci.yml/badge.svg)](https://github.com/rosedillon/cif-timetable/actions/workflows/ci.yml)
+[![Licence: GPL-3.0](https://img.shields.io/badge/licence-GPL--3.0-blue)](https://github.com/rosedillon/cif-timetable/blob/main/LICENSE)
+
 Turn Network Rail's SCHEDULE feed into a flat table of calling points,
 and count how many trains run on each route.
 
@@ -25,7 +30,7 @@ analyse_routes(Path("timetable"))
 Python 3.11 or later.
 
 ```sh
-pip install git+https://github.com/rosedillon/cif-timetable
+pip install cif-timetable
 ```
 
 or, from a clone, `pip install .`. It depends on pandas.
@@ -212,6 +217,6 @@ test. No licensed data is committed.
 
 ## Licence
 
-GPL-3.0. See [LICENSE](LICENSE).
+GPL-3.0. See [LICENSE](https://github.com/rosedillon/cif-timetable/blob/main/LICENSE).
 
 Not affiliated with or endorsed by Network Rail.
