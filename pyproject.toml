@@ -4,23 +4,27 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cif-timetable"
-version = "0.1.0"
-description = "Parse the Network Rail CIF schedule feed (JSON) into a calling-points table."
+version = "0.1.1"
+description = "Parse the Network Rail CIF timetable (SCHEDULE feed) into a table of GB train calling points in Python."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "GPL-3.0-only"
 license-files = ["LICENSE"]
 authors = [{ name = "Dillon Rose", email = "dillonrose0@icloud.com" }]
-keywords = ["rail", "timetable", "cif", "network-rail", "schedule", "tiploc", "open-rail-data"]
+keywords = ["cif", "timetable", "train-timetable", "network-rail", "schedule", "railway", "uk-rail", "tiploc", "calling-points", "great-britain", "open-data"]
 classifiers = [
     "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
     "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
     "Programming Language :: Python :: 3.14",
     "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dependencies = ["pandas>=2.0"]
 
@@ -32,7 +36,10 @@ cif-timetable = "cif_timetable.cli:main"
 
 [project.urls]
 Homepage = "https://github.com/rosedillon/cif-timetable"
+Documentation = "https://github.com/rosedillon/cif-timetable#readme"
+Source = "https://github.com/rosedillon/cif-timetable"
 Issues = "https://github.com/rosedillon/cif-timetable/issues"
+Changelog = "https://github.com/rosedillon/cif-timetable/releases"
 
 [tool.setuptools.packages.find]
 where = ["src"]
